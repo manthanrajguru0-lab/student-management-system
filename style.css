@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, #6c63ff, transparent 35%),
+        radial-gradient(circle at bottom right, #9b59b6, transparent 35%),
+        linear-gradient(135deg, #141e30, #243b55);
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 440px;
+    background: rgba(255, 255, 255, 0.97);
+    padding: 40px;
+    border-radius: 22px;
+    text-align: center;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.35);
+
+    animation: appear 0.7s ease;
+}
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    width: 82px;
+    height: 82px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.45);
+}
+
+h1 {
+    font-size: 27px;
+    color: #222;
+}
+
+.tagline {
+    margin-top: 8px;
+    color: #777;
+    font-size: 14px;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.welcome {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.error {
+    background: #ffe6e6;
+    color: #c62828;
+
+    padding: 11px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+
+    border-left: 4px solid #c62828;
+}
+
+.input-box {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-box label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #444;
+
+    margin-bottom: 7px;
+}
+
+.input-box input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #667eea;
+
+    box-shadow:
+        0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 65px;
+}
+
+.show-password {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #667eea;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-top: 5px;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 20px rgba(102, 126, 234, 0.35);
+}
+
+.footer {
+    margin-top: 25px;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+@media (max-width: 500px) {
+
+    .login-card {
+        padding: 30px 22px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+}
+.dashboard-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card .card-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.dashboard-card h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.dashboard-card p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
